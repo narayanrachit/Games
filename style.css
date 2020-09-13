@@ -1,0 +1,138 @@
+@font-face{
+  font-family: "pixel";
+  src: url(fonts/Pixelmania.ttf);
+}
+.nav{
+  font-family: "pixel";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.navbar-header {
+  float: left;
+  text-align: center;
+  width: 100%;
+  background-color: black;
+}
+.navbar-brand {float:none;
+font-family: "pixel";
+color: white;
+}
+/*
+
+.nav-bar
+{
+    top: 0;
+    position: sticky;
+    z-index: 2;
+    background-color: black;
+}
+.navbar-default{
+  transition:500ms ease;
+  background:transparent;
+}
+.navbar-default.scrolled{
+  background:rgba(106, 218, 238, 0.863);
+}
+.navbar-toggler
+{
+    outline: none !important;
+}
+.navbar-nav
+{
+    float: right;
+    text-align: right;
+}
+.nav-item{
+    padding-right: 30px;
+}
+.navbar-brand{
+    font-family: "pixel";
+}
+@media(max-width: 340px){
+  .navbar-toggler{
+    margin-left: 39%;
+  }
+  .navbar-brand{
+    margin-left: 6%;
+  }
+}*/
+
+.main {
+  width: 100%;
+  -webkit-margin: auto; 
+  overflow: hidden;
+  color: #fff
+}
+.slider {
+  position: relative
+}
+.slider .slider-parent {
+  padding: 0;
+  display: flex
+}
+.slider .slider-parent .images-list {
+  background-size: cover;
+}
+.slider .slider-parent .images-list:first-of-type, .slider .slider-parent .images-list:last-of-type {
+  background-image: url(assets/mario.PNG)
+}
+.slider .slider-parent .images-list:nth-of-type(2) {
+  background-image: url(assets/snake.jpg)
+}
+.slider .slider-parent .images-list:nth-of-type(3) {
+  background-image: url(assets/CoronaFighters.jpg)
+}
+.slider .slider-parent .images-list:nth-of-type(4) {
+  background-image: url(assets/spin.png)
+}
+.slider .buttom-circles {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  bottom: 10px
+}
+.slider .buttom-circles .buttom-circles-list {
+  display: inline-block
+}
+.slider .buttom-circles .buttom-circles-list:hover .fa:before, .slider .buttom-circles .buttom-circles-list.slider-active .fa:before {
+  content: "\f111";
+}
+.slider > .fa {
+  position: absolute;
+  top: 45%
+}
+.slider > .fa:first-of-type { right: 5px}
+.slider > .fa:last-of-type { left: 5px}
+.slider .fa {
+  text-shadow: 5px 5px 5px #555;
+  cursor: pointer
+}
+
+@media(min-width: 100px) and (max-width: 767px) {
+  .slider > .fa { font-size: 25px }
+  .slider .buttom-circles .buttom-circles-list { visibility: hidden }
+}
+@media(min-width: 768px) and (max-width: 991px) { 
+  .slider > .fa { font-size: 50px }
+  .slider .buttom-circles .buttom-circles-list { visibility: hidden }
+}
+@media(min-width: 992px) and (max-width: 1199px) { 
+  .slider > .fa { font-size: 75px }
+  .slider .buttom-circles .buttom-circles-list { font-size: 17px }
+}
+@media(min-width: 1200px) { 
+  .slider > .fa { font-size: 100px }
+  .slider .buttom-circles .buttom-circles-list { font-size: 25px }
+}
+
+.footer
+{
+  background: #000;
+height: 50px;
+color: #fff;
+padding-top: 10px;
+}
