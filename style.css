@@ -2,27 +2,19 @@
   font-family: "pixel";
   src: url(fonts/Pixelmania.ttf);
 }
-/* .nav{
-  font-family: "pixel";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+
+.img{
+  display: none;
 }
-
-.navbar-header {
-  float: left;
-  text-align: center;
-  width: 100%;
-  background-color: black;
+@media(max-width: 1024px){
+  .slide{
+    display: none;
+  }
+  .img{
+    display: inline;
+  }
+  
 }
-.navbar-brand {float:none;
-font-family: "pixel";
-color: white;
-} */
-
-
 .nav-bar
 {
     top: 0;
